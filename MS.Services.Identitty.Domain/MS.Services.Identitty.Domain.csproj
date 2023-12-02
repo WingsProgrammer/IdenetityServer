@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Ardalis.ApiEndpoints" Version="4.0.1" />
+		<PackageReference Include="Duende.IdentityServer" Version="6.1.0-preview.3" />
+		<PackageReference Include="Duende.IdentityServer.AspNetIdentity" Version="6.1.0-preview.3" />
+		<PackageReference Include="Duende.IdentityServer.EntityFramework" Version="6.1.0-preview.3" />
+		<PackageReference Include="IdGen" Version="3.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.5">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="MsftFramework.Abstractions" Version="1.0.2" />
+		<PackageReference Include="MsftFramework.Core" Version="1.0.3" />
+		<PackageReference Include="MsftFramework.CQRS" Version="1.0.2" />
+		<PackageReference Include="MsftFramework.Messaging.Postgres" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Persistence.EfCore.Postgres" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Scheduling.Internal" Version="1.0.1" />
+	</ItemGroup>
+	 
+</Project>

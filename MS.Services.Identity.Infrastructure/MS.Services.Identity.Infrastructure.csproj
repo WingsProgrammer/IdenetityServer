@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Users\**" />
+    <EmbeddedResource Remove="Users\**" />
+    <None Remove="Users\**" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Ardalis.ApiEndpoints" Version="4.0.1" />
+		<PackageReference Include="Duende.IdentityServer" Version="6.1.0-preview.3" />
+		<PackageReference Include="Duende.IdentityServer.AspNetIdentity" Version="6.1.0-preview.3" />
+		<PackageReference Include="Duende.IdentityServer.EntityFramework" Version="6.1.0-preview.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.4" />
+		<PackageReference Include="MsftFramework.Abstractions" Version="1.0.2" />
+		<PackageReference Include="MsftFramework.Caching.Redis" Version="1.0.1" />
+		<PackageReference Include="MsftFramework.Core" Version="1.0.3" />
+		<PackageReference Include="MsftFramework.CQRS" Version="1.0.2" />
+		<PackageReference Include="MsftFramework.Messaging.Postgres" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Monitoring" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Scheduling.Internal" Version="1.0.1" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <Folder Include="Identity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MS.Services.Identitty.Domain\MS.Services.Identitty.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

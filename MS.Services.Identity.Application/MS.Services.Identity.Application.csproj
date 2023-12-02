@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Identity\IdentityConfigs.cs" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Ardalis.ApiEndpoints" Version="4.0.1" />
+		<PackageReference Include="Duende.IdentityServer" Version="6.1.0-preview.3" />
+		<PackageReference Include="Duende.IdentityServer.AspNetIdentity" Version="6.1.0-preview.3" />
+		<PackageReference Include="Duende.IdentityServer.EntityFramework" Version="6.1.0-preview.3" />
+		<PackageReference Include="FluentValidation" Version="10.4.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.4" />
+		<PackageReference Include="MsftFramework.Abstractions" Version="1.0.2" />
+		<PackageReference Include="MsftFramework.Core" Version="1.0.3" />
+		<PackageReference Include="MsftFramework.CQRS" Version="1.0.2" />
+		<PackageReference Include="MsftFramework.Email" Version="1.0.0" />
+		<PackageReference Include="MsftFramework.Security" Version="1.0.5" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <Folder Include="Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KavehNegarSmsProvider\KavehNegarSmsProvider.csproj" />
+    <ProjectReference Include="..\MS.Services.Identitty.Domain\MS.Services.Identitty.Domain.csproj" />
+    <ProjectReference Include="..\MS.Services.Identity.Infrastructure\MS.Services.Identity.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

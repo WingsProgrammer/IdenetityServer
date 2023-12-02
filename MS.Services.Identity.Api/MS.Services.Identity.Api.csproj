@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UserSecretsId>bc12acc2-ed11-498e-b326-a2e9c8ad95a2</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	</PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Ardalis.GuardClauses" Version="4.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="MsftFramework.Abstractions" Version="1.0.2" />
+    <PackageReference Include="MsftFramework.Caching.InMemory" Version="1.0.0" />
+    <PackageReference Include="MsftFramework.Caching.Redis" Version="1.0.1" />
+    <PackageReference Include="MsftFramework.Core" Version="1.0.3" />
+    <PackageReference Include="MsftFramework.CQRS" Version="1.0.2" />
+    <PackageReference Include="MsftFramework.Logging" Version="1.0.0" />
+    <PackageReference Include="MsftFramework.Messaging.Transport.Rabbitmq" Version="1.0.0" />
+    <PackageReference Include="MsftFramework.Security" Version="1.0.5" />
+    <PackageReference Include="MsftFramework.Swagger" Version="1.0.0" />
+    <PackageReference Include="MsftFramework.Tracing" Version="1.0.0" />
+    <PackageReference Include="MsftFramework.Validation" Version="1.0.0" />
+    <PackageReference Include="MsftFramework.Web" Version="1.0.0" />
+  </ItemGroup>
+ 
+  
+
+  <ItemGroup>
+    <ProjectReference Include="..\KavehNegarSmsProvider\KavehNegarSmsProvider.csproj" />
+    <ProjectReference Include="..\MS.Services.Identitty.Domain\MS.Services.Identitty.Domain.csproj" />
+    <ProjectReference Include="..\MS.Services.Identity.Application\MS.Services.Identity.Application.csproj" />
+    <ProjectReference Include="..\MS.Services.Identity.Infrastructure\MS.Services.Identity.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
